@@ -45,10 +45,10 @@ const PH_TOO_HIGH = 8.0
 const PH_HARD_MAX = 9.2
 
 const ORP_HARD_MIN = 100
-const ORP_TOO_LOW = 600
-const ORP_MIN = 690
-const ORP_MAX = 780
-const ORP_TOO_HIGH = 800
+const ORP_TOO_LOW = 650
+const ORP_MIN = 730
+const ORP_MAX = 810
+const ORP_TOO_HIGH = 850
 const ORP_HARD_MAX = 900
 
 const FLOW_HARD_MIN = 10
@@ -63,7 +63,7 @@ const ACID_EXTRA_UNITS = 0.1
 const ACID_MAX_SECONDS = 10
 
 const BLEACH_SECONDS_PER_MV = 0.6
-const ORP_GAIN = 1.8
+const ORP_GAIN = 1.0
 const BLEACH_EXTRA_MV = 10
 const BLEACH_MAX_SECONDS = 55
 
