@@ -97,7 +97,8 @@ class Sensors extends EventEmitter {
 
 		if (err) {
 			if (self._errorCount > RETRIES) {
-				return self.emit('error', err)
+				fs.writeFile('/sys/bus/gpio/devices/gpiochip0/gpio/gpio24/value', '0') // shut off circulation pump
+				return self.emit('error: errorCount > RETRIES', err)
 			}
 		}
 		if (!self.enabled || self._running || !self._ready)
